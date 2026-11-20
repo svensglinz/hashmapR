@@ -2,7 +2,7 @@
 #include <Rinternals.h>
 #include <R_ext/Rdynload.h>
 
-extern SEXP C_hashmap_init();
+extern SEXP C_hashmap_init(void);
 extern SEXP C_hashmap_get(SEXP map, SEXP key);
 extern SEXP C_hashmap_remove(SEXP map, SEXP key);
 extern SEXP C_hashmap_getkeys(SEXP map);
