@@ -440,7 +440,7 @@ class Hashmap {
 
 extern "C" {
 
-    SEXP C_hashmap_init() {
+    SEXP C_hashmap_init(void) {
     Hashmap *map = new Hashmap;
     return map->to_extptr();
 }
